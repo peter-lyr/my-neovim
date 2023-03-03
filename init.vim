@@ -1,5 +1,5 @@
 lua << eof
-vim.g.mapleader = " "
+vim.g.mapleader = ' '
 eof
 
 packadd init
@@ -11,9 +11,9 @@ let s:load_immediately_filetpyes = [
 
 fu! MyBufEnter(force)
   if a:force == 2
-    echomsg "5 secs..."
+    echomsg '5 secs...'
   endif
-  if a:force || len(expand('%:p')) && !exists("s:after_loaded_group") &&
+  if a:force || len(expand('%:p')) && !exists('s:after_loaded_group') &&
         \ index(s:load_immediately_filetpyes, &ft) != -1
     let s:after_loaded_group = 1
     packadd plugins-after

@@ -1,9 +1,9 @@
-local status, telescope = pcall(require, "telescope")
+local status, telescope = pcall(require, 'telescope')
 if not status then
   return
 end
 
-local status2, actions = pcall(require, "telescope.actions")
+local status2, actions = pcall(require, 'telescope.actions')
 if not status2 then
   return
 end
@@ -12,44 +12,44 @@ telescope.setup({
   defaults = {
     mappings = {
       i = {
-        ["<a-m>"] = actions.close,
-        ["<a-j>"] = actions.move_selection_next,
-        ["<a-k>"] = actions.move_selection_previous,
-        ["<a-;>"] = actions.send_to_qflist + actions.open_qflist,
-        ["<c-j>"] = actions.select_horizontal,
-        ["<c-l>"] = actions.select_vertical,
-        ["<c-k>"] = actions.select_tab,
-        ["<c-o>"] = actions.select_default,
+        ['<a-m>'] = actions.close,
+        ['<a-j>'] = actions.move_selection_next,
+        ['<a-k>'] = actions.move_selection_previous,
+        ['<a-;>'] = actions.send_to_qflist + actions.open_qflist,
+        ['<c-j>'] = actions.select_horizontal,
+        ['<c-l>'] = actions.select_vertical,
+        ['<c-k>'] = actions.select_tab,
+        ['<c-o>'] = actions.select_default,
       },
       n = {
-        ["<a-m>"] = actions.close,
-        ["<a-j>"] = actions.move_selection_next,
-        ["<a-k>"] = actions.move_selection_previous,
-        ["<a-;>"] = actions.send_to_qflist + actions.open_qflist,
-        ["<c-j>"] = actions.select_horizontal,
-        ["<c-l>"] = actions.select_vertical,
-        ["<c-k>"] = actions.select_tab,
-        ["<c-o>"] = actions.select_default,
+        ['<a-m>'] = actions.close,
+        ['<a-j>'] = actions.move_selection_next,
+        ['<a-k>'] = actions.move_selection_previous,
+        ['<a-;>'] = actions.send_to_qflist + actions.open_qflist,
+        ['<c-j>'] = actions.select_horizontal,
+        ['<c-l>'] = actions.select_vertical,
+        ['<c-k>'] = actions.select_tab,
+        ['<c-o>'] = actions.select_default,
       }
     },
     file_ignore_patterns = {
-      ".git/",
-      ".cache/",
-      "build/",
-      "%.asc",
-      "%.hex",
-      -- "map.txt",
-      -- "%.lst",
+      '.git/',
+      '.cache/',
+      'build/',
+      '%.asc',
+      '%.hex',
+      -- 'map.txt',
+      -- '%.lst',
     },
     vimgrep_arguments = {
-      "rg",
-      "--color=never",
-      "--no-heading",
-      "--with-filename",
-      "--line-number",
-      "--column",
-      "--smart-case",
-      "--fixed-strings",
+      'rg',
+      '--color=never',
+      '--no-heading',
+      '--with-filename',
+      '--line-number',
+      '--column',
+      '--smart-case',
+      '--fixed-strings',
     },
     wrap_results = false,
   },
