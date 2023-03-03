@@ -34,6 +34,10 @@ local plugins = function(use)
   use("xolox/vim-misc")
   use("xolox/vim-session")
 
+  use("rafi/awesome-vim-colorschemes")
+  use("EdenEast/nightfox.nvim")
+  use("folke/tokyonight.nvim")
+
 
 end
 
