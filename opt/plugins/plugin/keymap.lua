@@ -22,7 +22,7 @@ keymap.set('v', '<a-s-p>', '"+p')
 keymap.set({'n', 'i'}, '<rightmouse>', '<leftmouse>')
 keymap.set({'n', 'i'}, '<rightrelease>', '<nop>')
 
-keymap.set('n', '<leader>f.', '<cmd>:if (&ft == 'vim' || &ft == 'lua') | source %:p | endif<cr>')
+keymap.set('n', '<leader>f.', '<cmd>:if (&ft == "vim" || &ft == "lua") | source %:p | endif<cr>')
 
 keymap.set('n', 'c.', '<cmd>:try|cd %:h|catch|endtry<cr>', {silent = true})
 keymap.set('n', 'cu', '<cmd>:try|cd ..|catch|endtry<cr>', {silent = true})
