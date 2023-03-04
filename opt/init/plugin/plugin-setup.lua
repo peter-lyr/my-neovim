@@ -49,12 +49,15 @@ local plugins = function(use)
   use("tpope/vim-surround")
   use("preservim/nerdcommenter")
   use("windwp/nvim-autopairs")
-  use 'skywind3000/asyncrun.vim'
-  use { 'phaazon/hop.nvim', branch = 'v2' }
+  use('skywind3000/asyncrun.vim')
+  use({ 'phaazon/hop.nvim', branch = 'v2' })
   use("azabiong/vim-highlighter")
   use("bitc/vim-bad-whitespace")
   use("dstein64/nvim-scrollview")
 
+  use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
+  use("p00f/nvim-ts-rainbow")
+  use("nvim-treesitter/nvim-treesitter-context")
 
 end
 

@@ -13,7 +13,7 @@ try
   call defx#custom#option('_', {
       \ 'winwidth': 65,
       \ 'split': 'vertical',
-        \ 'direction': 'topleft',
+      \ 'direction': 'topleft',
       \ 'show_ignored_files': 0,
       \ 'buffer_name': '',
       \ 'toggle': 1,
