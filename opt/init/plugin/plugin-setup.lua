@@ -61,12 +61,18 @@ local plugins = function(use)
 
   use("lukas-reineke/indent-blankline.nvim")
 
+  use("peter-lyr/my-terminal")
+  use("peter-lyr/my-replace")
+  use("peter-lyr/my-telescope-extension")
+  use("peter-lyr/my-markdown")
+  use("peter-lyr/vim-get-blocks")
+  use("peter-lyr/my-translate")
+
 end
 
 return packer.startup(function(use)
   use('wbthomason/packer.nvim')
   use('nvim-lua/plenary.nvim')
-  use("peter-lyr/my-terminal")
 
   plugins(use)
 
