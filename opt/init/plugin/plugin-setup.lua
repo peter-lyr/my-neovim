@@ -46,6 +46,15 @@ local plugins = function(use)
   use("sindrets/diffview.nvim")
   use("kyazdani42/nvim-web-devicons")
 
+  use("tpope/vim-surround")
+  use("preservim/nerdcommenter")
+  use("windwp/nvim-autopairs")
+  use 'skywind3000/asyncrun.vim'
+  use { 'phaazon/hop.nvim', branch = 'v2' }
+  use("azabiong/vim-highlighter")
+  use("bitc/vim-bad-whitespace")
+  use("dstein64/nvim-scrollview")
+
 
 end
 
