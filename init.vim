@@ -4,6 +4,7 @@ eof
 
 packadd init
 packadd plugins
+packadd core
 
 let s:load_immediately_filetpyes = [
       \ 'c',
