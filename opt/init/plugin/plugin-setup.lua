@@ -59,6 +59,8 @@ local plugins = function(use)
   use("p00f/nvim-ts-rainbow")
   use("nvim-treesitter/nvim-treesitter-context")
 
+  use("lukas-reineke/indent-blankline.nvim")
+
 end
 
 return packer.startup(function(use)
