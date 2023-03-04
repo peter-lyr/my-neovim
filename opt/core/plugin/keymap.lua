@@ -31,7 +31,7 @@ keymap.set('n', 'c-', '<cmd>:try|cd -|catch|endtry<cr>', {silent = true})
 keymap.set('n', 'q', '<nop>')
 keymap.set('n', 'q', 'q')
 
-keymap.set('n', 'u', '<c-r>')
+keymap.set('n', 'U', '<c-r>')
 
 keymap.set('n', '<c-s>', '5<c-e>')
 keymap.set('n', '<c-a>', '5<c-y>')

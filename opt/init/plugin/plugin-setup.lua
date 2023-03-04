@@ -41,12 +41,18 @@ local plugins = function(use)
   use("nvim-tree/nvim-tree.lua")
   use("Shougo/defx.nvim")
 
+  use("lewis6991/gitsigns.nvim")
+  use("tpope/vim-fugitive")
+  use("sindrets/diffview.nvim")
+  use("kyazdani42/nvim-web-devicons")
+
 
 end
 
 return packer.startup(function(use)
   use('wbthomason/packer.nvim')
   use('nvim-lua/plenary.nvim')
+  use("peter-lyr/my-terminal")
 
   plugins(use)
 

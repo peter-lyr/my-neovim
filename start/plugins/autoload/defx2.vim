@@ -184,3 +184,8 @@ fu! defx2#cwd()
   catch
   endtry
 endfu
+
+set mousemodel=extend
+autocmd WinEnter,BufEnter * call defx1#defx_my_settings()
+let g:defx_icons_enable_syntax_highlight = 1
+let g:defx_icons_column_length = 2
