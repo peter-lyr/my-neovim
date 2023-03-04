@@ -38,6 +38,9 @@ local plugins = function(use)
   use('EdenEast/nightfox.nvim')
   use('folke/tokyonight.nvim')
 
+  use("nvim-tree/nvim-tree.lua")
+  use("Shougo/defx.nvim")
+
 
 end
 
