@@ -1,3 +1,3 @@
-nnoremap <leader>ee <cmd>:EraseBadWhitespace<CR>
-nnoremap <leader>eh <cmd>:HideBadWhitespace<CR>
-nnoremap <leader>es <cmd>:ShowBadWhitespace<CR>
+nnoremap <leader>ee <cmd>:EraseBadWhitespace<cr>
+nnoremap <leader>eh <cmd>:HideBadWhitespace<cr>
+nnoremap <leader>es <cmd>:ShowBadWhitespace<cr>

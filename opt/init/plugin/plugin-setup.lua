@@ -68,6 +68,13 @@ local plugins = function(use)
   use("peter-lyr/vim-get-blocks")
   use("peter-lyr/my-translate")
 
+  use({
+    "iamcco/markdown-preview.nvim",
+    run = function()
+      vim.fn["mkdp#util#install"]()
+    end
+  })
+
 end
 
 return packer.startup(function(use)

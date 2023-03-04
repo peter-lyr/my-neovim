@@ -3,23 +3,23 @@ let g:HiMapKeys = 0
 let g:HiFollowWait = 0
 let g:HiOneTimeWait = 0
 
-nnoremap <leader>hn <cmd>:nohl<CR>
+nnoremap <leader>hn <cmd>:nohl<cr>
 
-nnoremap <leader>hc <cmd>:Hi+<CR>
-vnoremap <leader>hc <ESC><cmd>:Hi+x<CR>
-nnoremap <leader>he <cmd>:Hi-<CR>
-vnoremap <leader>he <ESC><cmd>:Hi-x<CR>
+nnoremap <leader>hc <cmd>:Hi+<cr>
+vnoremap <leader>hc <ESC><cmd>:Hi+x<cr>
+nnoremap <leader>he <cmd>:Hi-<cr>
+vnoremap <leader>he <ESC><cmd>:Hi-x<cr>
 
-nnoremap <leader>hw <cmd>:Hi<cword><CR>
-nnoremap <leader>hW <cmd>:Hi<cWORD><CR>
+nnoremap <leader>hw <cmd>:Hi<cword><cr>
+nnoremap <leader>hW <cmd>:Hi<cWORD><cr>
 
-nnoremap <leader>hf <cmd>:Hi>><CR>
+nnoremap <leader>hf <cmd>:Hi>><cr>
 
-nnoremap <leader>hb <cmd>:Hi=<CR>
-nnoremap <leader>ht <cmd>:Hi==<CR>
+nnoremap <leader>hb <cmd>:Hi=<cr>
+nnoremap <leader>ht <cmd>:Hi==<cr>
 
-nnoremap <c-m> <cmd>:Hi}<CR>
-nnoremap <c-n> <cmd>:Hi{<CR>
+nnoremap <c-m> <cmd>:Hi}<cr>
+nnoremap <c-n> <cmd>:Hi{<cr>
 
-nnoremap <c-s-m> <cmd>:Hi><CR>
-nnoremap <c-s-n> <cmd>:Hi<<CR>
+nnoremap <c-s-m> <cmd>:Hi><cr>
+nnoremap <c-s-n> <cmd>:Hi<<cr>
