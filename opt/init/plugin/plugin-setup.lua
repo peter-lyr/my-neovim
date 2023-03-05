@@ -80,6 +80,11 @@ local plugins = function(use)
   use("MattesGroeger/vim-bookmarks")
   use("tom-anders/telescope-vim-bookmarks.nvim")
 
+  use("williamboman/mason.nvim")
+  use("williamboman/mason-lspconfig.nvim")
+  use("neovim/nvim-lspconfig")
+  use({ "glepnir/lspsaga.nvim", branch = "main" })
+
 end
 
 return packer.startup(function(use)
