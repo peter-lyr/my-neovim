@@ -1,4 +1,4 @@
-fu! Tab_indent()
+fu! tabindent#do()
   if &ft == 'c'
     set tabstop=4
     set softtabstop=4
@@ -9,5 +9,3 @@ fu! Tab_indent()
     set shiftwidth=2
   endif
 endfu
-
-au BufEnter * call Tab_indent()

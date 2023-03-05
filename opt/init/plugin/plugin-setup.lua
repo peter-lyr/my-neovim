@@ -75,6 +75,11 @@ local plugins = function(use)
     end
   })
 
+  use("dbakker/vim-projectroot")
+  use("ahmedkhalf/project.nvim")
+  use("MattesGroeger/vim-bookmarks")
+  use("tom-anders/telescope-vim-bookmarks.nvim")
+
 end
 
 return packer.startup(function(use)

@@ -29,6 +29,15 @@ local function start(node)
   end
 end
 
+local function autoopen(node)
+  vim.g.nvimtree_autoopen = 1 - vim.g.nvimtree_autoopen
+  if (vim.g.nvimtree_autoopen == 1) then
+    print("auto open true")
+  else
+    print("auto open false")
+  end
+end
+
 nvimtree.setup({
   filters = {
     dotfiles = true,
@@ -96,6 +105,7 @@ nvimtree.setup({
         { key = "<f2>",                           action = "quicklook", action_cb = quicklook, },
         { key = "<f3>",                           action = "fname", action_cb = fname, },
         { key = "X",                              action = "start", action_cb = start, },
+        { key = "<f1>",                           action = "autoopen", action_cb = autoopen, },
       },
     }
   },
